@@ -1,0 +1,6 @@
+atn_model_weights
+__pycache__
+cifar10_models/state_dicts
+data
+runs
+temp
