@@ -76,8 +76,13 @@ def download_weights():
     url = (
         "https://rutgers.box.com/shared/static/gkw08ecs797j2et1ksmbg1w5t3idf5r5.zip"
     )
-    zip_file_path = os.path.join(os.getcwd(), "temp/state_dicts.zip")
+    temp_dir = os.path.join(os.getcwd(), "temp")
+    zip_file_path = os.path.join(temp_dir, "state_dicts.zip")
     extract_dir = os.path.join(os.getcwd(), "cifar10_models")
+
+    # Create temp directory if it doesn't exist
+    if not os.path.exists(temp_dir):
+        os.makedirs(temp_dir)
 
     # Check if the zip file already exists
     if os.path.exists(zip_file_path):
