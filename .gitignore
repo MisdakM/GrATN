@@ -1,4 +1,4 @@
-atn_model_weights
+# atn_model_weights
 __pycache__
 cifar10_models/state_dicts
 data
