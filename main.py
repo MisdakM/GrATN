@@ -51,13 +51,10 @@ def main(mode='train'):
             model, data_loader, device, ATN=atn_model, target=target)
 
         print('-'*50)
-        print(f'Accuracy Drop \t\t\t: {
-              accuracy_before_atn * 100:.2f}% -> {accuracy_after_atn * 100:.2f}%')
-        print(f'Avg Target Rate for {get_class_name(target)}\t: {
-              avg_target_rate * 100:.2f}%')  # targeted_predictions / total_samples
+        print(f'Accuracy Drop \t\t\t: {accuracy_before_atn * 100:.2f}% -> {accuracy_after_atn * 100:.2f}%')
+        print(f'Avg Target Rate for {get_class_name(target)}\t: {avg_target_rate * 100:.2f}%')  # targeted_predictions / total_samples
         print('-'*50)
-        print(f'Accuracy drop due to ATN\t: {
-              (accuracy_before_atn - accuracy_after_atn) * 100:.2f}%')
+        print(f'Accuracy drop due to ATN\t: {(accuracy_before_atn - accuracy_after_atn) * 100:.2f}%')
 
 
 def get_device():
