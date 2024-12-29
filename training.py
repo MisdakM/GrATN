@@ -80,7 +80,7 @@ def compute_accuracy(model, dataloader, device, ATN=None, target=None):
 
             if ATN is not None :
                 # Perturb images before passing them to the model
-                adv_images, _ = perturb(images, atn_model=ATN, target_model=model, target=target)
+                adv_images, _ = perturb(images, atn_model=ATN, target_model=model, target=target, device=device)
                 
                 outputs = model(normalize(images))
                 adv_outputs = model(normalize(adv_images))
