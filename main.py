@@ -160,8 +160,7 @@ def train_atn(device, model, atn_model, atn_criterion, atn_optimizer, atn_schedu
             print('--' * 50)
 
     training_time = time.time() - start_time
-    print(f"Training complete in {training_time //
-          60:.0f}m {training_time % 60:.0f}s")
+    print(f"Training complete in {training_time //60:.0f}m {training_time % 60:.0f}s")
     print('Done training ATN.')
 
 
