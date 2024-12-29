@@ -155,8 +155,7 @@ def train_atn(device, model, atn_model, atn_criterion, atn_optimizer, atn_schedu
             best_val_ssim = atn_val_avg_ssim
             torch.save(atn_model.state_dict(), best_atn_model_path)
             print('--' * 50)
-            print(f'--> Saving best GrATN model with accuracy (tolerance: {accuracy_tolerance}): {
-                  lowest_model_accuracy:.4f} and SSIM: {best_val_ssim:.4f}')
+            print(f'--> Saving best GrATN model with accuracy (tolerance: {accuracy_tolerance}): {lowest_model_accuracy:.4f} and SSIM: {best_val_ssim:.4f}')
             print('--' * 50)
 
     training_time = time.time() - start_time
