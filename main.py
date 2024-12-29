@@ -24,7 +24,7 @@ def main():
         print('Using more than one GPU')
         atn_model = nn.DataParallel(atn_model)
 
-    mode = 'train'
+    mode = 'test'
     target = 0
 
     if mode == 'train':
