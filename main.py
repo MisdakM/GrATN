@@ -148,8 +148,7 @@ def train_atn(device, model, atn_model, atn_criterion, atn_optimizer, atn_schedu
         atn_val_accuracies.append(atn_val_accuracy)
         atn_val_losses.append(0)  # TODO: Compute Loss for Val Set
         atn_val_ssims.append(atn_val_avg_ssim)
-        print(f'Validation: Accuracy: {atn_val_accuracy:.4f} | Avg. SSIM: {
-              atn_val_avg_ssim:.4f} | Avg. Time/Image: {atn_val_avg_time_per_image * 1000:.2f} ms')
+        print(f'Validation: Accuracy: {atn_val_accuracy:.4f} | Avg. SSIM: {atn_val_avg_ssim:.4f} | Avg. Time/Image: {atn_val_avg_time_per_image * 1000:.2f} ms')
 
         if atn_val_accuracy < lowest_model_accuracy:
             lowest_model_accuracy = atn_val_accuracy
