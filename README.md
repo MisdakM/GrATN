@@ -30,4 +30,6 @@ This repository contains the implementation of a Generative Adversarial Transfor
 ### Training the GrATN Model
 
 To train the GrATN model, set the `mode` variable to `'train'` in the `main.py` file and run the script.
+### Pretrained Weights
 
+The `atn_model_weights` folder includes pretrained weights for a GrATN model that has been specifically trained to target MobileNetV2. These weights correspond to each of the 10 classes in the CIFAR-10 dataset.
