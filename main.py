@@ -37,8 +37,8 @@ def main():
         train_atn(device, model, atn_model, atn_criterion, atn_optimizer, atn_scheduler, atn_metrics, atn_epochs, target, best_atn_model_path, accuracy_tolerance, train_loader, test_loader, writer)
 
     elif mode == 'test':
-        best_model_weights = torch.load('atn_model_weights/best_atn_model_weights.pth')
-        # best_model_weights = torch.load('atn_model_weights/0-target-0.9391-0.1966-2000-15epochs-0.1135mse-0.9435-ConvAtten.pth')
+        # best_model_weights = torch.load('atn_model_weights/best_atn_model_weights.pth')
+        best_model_weights = torch.load('atn_model_weights/0-target-0.9391-0.1966-2000-15epochs-0.1135mse-0.9435-ConvAtten.pth')
         atn_model.load_state_dict(best_model_weights)
         print("Best model weights loaded successfully.")
 
