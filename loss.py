@@ -35,8 +35,8 @@ class AdversarialReconstructionLoss(nn.Module):
         
         if reconstruction == 'mse':
             self.reconstruction_loss = nn.MSELoss()  # Mean Squared Error loss for reconstruction
-        # elif reconstruction == 'lpips':
-        #     self.reconstruction_loss = lpips.LPIPS(net='alex').to(device)  # Can also use 'vgg' or 'squeeze'
+        elif reconstruction == 'lpips':
+            self.reconstruction_loss = lpips.LPIPS(net='alex').to(device)  # Can also use 'vgg' or 'squeeze'
         else:
             print('Unsupported Reconstruction Loss !!')
         
