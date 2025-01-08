@@ -51,8 +51,6 @@ The CIFAR-10 dataset can be accessed directly through the code or manually downl
 
 The code includes functionality to automatically download and preprocess the dataset if it is not already available.
 
-## Usage
-
 ## Usage Guide
 
 To train the GrATN model:
@@ -86,3 +84,14 @@ To evaluate the performance of GrATN, the following metrics are used:
 
 These results demonstrate GrATN's effectiveness in generating successful adversarial attacks with minimal computational cost and minimal perceptual distortion on MobileNetV2.
 
+## **Citation**
+
+If you use this code or reference the ideas presented in this repository, please cite our paper as follows:
+
+```bibtex
+@article{gratn_paper,
+  title={Gradient Adversarial Transformation Networks: Enhancing Targeted Attacks on Computer Vision Systems},
+  journal={The Visual Computer},
+  year={2025},
+  doi={xxxx/xxxxxxxx}
+}
