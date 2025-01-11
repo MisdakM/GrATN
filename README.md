@@ -68,7 +68,7 @@ The `atn_model_weights` folder contains pretrained weights for a GrATN model spe
 
 To evaluate the performance of GrATN, the following metrics are used:
 
-- **Attack Success Rate (ASR)**: The percentage of successful attacks on the target model.
+- **Attack Success Rate (ASR)**: The ASR is a metric that directly reflects the accuracy of the model after it has been subjected to an adversarial attack by the ATN. Specifically, ASR measures the proportion of test images for which the model correctly identifies the predefined target class after the attack.
 - **Average MSE**: The average Mean Squared Error between the adversarial image and the original image.
 - **Average SSIM**: The average Structural Similarity Index between the original and perturbed images.
 - **Average Time per Image**: The average time taken to generate an adversarial image.
